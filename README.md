@@ -6,7 +6,7 @@ This mod contains the following features:
 
 ## Fix Totals Count Bug
 
-This totals displayed on individual buildings that generate population, happiness, education, storage and worship are incorrect. This fixes the bug by replacing the `BuildingInTownElement.updateBuildingTotals` function and correctly implements the building count.
+The totals displayed on individual buildings that generate population, happiness, education, storage and worship are incorrect. This fixes the bug by replacing the `BuildingInTownElement.updateBuildingTotals` function and correctly implements the building count.
 
 This is purely a visual bug on the individual buildings and underlying game logic is modified. The totals displayed at the top of the Township page are correct, but if you add up the individual tiles across your town, they don't want match the total at the top.
 
