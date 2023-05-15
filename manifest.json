@@ -1,0 +1,5 @@
+{
+    "namespace": "mythTownship",
+    "setup": "setup.mjs",
+    "icon": "assets/logo.png"
+}
