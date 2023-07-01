@@ -1,13 +1,11 @@
-import { Component } from '../../framework/component';
-
-export class Totals implements Component {
+export class Totals {
     constructor(private readonly context: Modding.ModContext) {}
 
     public init() {
         this.context.onInterfaceReady(() => {
             this.context
                 .patch(BuildingInTownElement, 'updateBuildingTotals')
-                .replace(function (original, building, township) {
+                .replace(function (_original, building, township) {
                     const biome = township.currentTownBiome;
 
                     if (biome === undefined) {
